@@ -1,0 +1,3 @@
+add_subdirectory(regression)
+add_subdirectory(classification)
+add_subdirectory(optimization)

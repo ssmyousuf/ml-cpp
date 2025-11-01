@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.10)
+project(ml-ai-cpp)
+set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+find_package(Eigen3 5.0.1 REQUIRED NO_MODULE)
+find_package(Python3 COMPONENTS Interpreter Development NumPy REQUIRED)
+add_subdirectory(src)
+add_subdirectory(test)
+add_subdirectory(example)
+
